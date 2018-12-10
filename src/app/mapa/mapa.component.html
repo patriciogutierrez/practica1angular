@@ -1,0 +1,15 @@
+<div class="left-panel">
+  <div class="btn-group-vertical btn-block">
+    <button type="button" class="btn btn-primary"  (click)="plotVariable('T2')" [disabled]="lugar == null">T2</button>
+    <button type="button" class="btn btn-primary" (click)="plotVariable('PSFC')" [disabled]="lugar == null">PSFC</button>
+    <button type="button" class="btn btn-primary"  (click)="plotVariable('U10')" [disabled]="lugar == null">U10</button>
+    <button type="button" class="btn btn-primary"  (click)="plotVariable('V10')" [disabled]="lugar == null">V10</button>
+
+  </div>
+  <div class="right-panel">
+      <div id="chartContainer" class="bottom-right" >
+          <canvas #myChart >{{ chart }}</canvas>
+      </div>
+    <div id="mapid" class="top-right"></div>
+
+  </div>

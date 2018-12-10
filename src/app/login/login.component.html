@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <form class="form-signin" (ngSubmit)="submit()">
+    <h2 class="form-signin-heading">Acceso</h2>
+    <h4 *ngIf="error">{{error}}</h4>
+    <input type="text" class="form-control" name="username" placeholder="Usuario" required="" autofocus="" [(ngModel)]="username" />
+    <input type="password" class="form-control" name="password" placeholder="Contraseña" required="" [(ngModel)]="password" />
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  </form>
+</div>
